@@ -65,6 +65,7 @@ class testTest extends TestCase {
     public function testQuestion2() {
         $test = new test();
         $testCases = [
+            10 => 'ten',
             19 => 'nineteen',
             123 => 'one hundred twenty three',
             -1100 => 'negative one thousand one hundred',

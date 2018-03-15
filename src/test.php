@@ -126,7 +126,10 @@ class test {
         //since terminology table is a hash table if number is in it we can return it in O(1)
         if (isset($terminology[$n])) {
             $one = "";
-            if(in_array($n, [1000000000, 1000000, 1000, 100, 10])){
+            /**
+             * Note we don't say 'one ten', but we say 'one hundred, one thousand, one million, one billion
+             */
+            if(in_array($n, [1000000000, 1000000, 1000, 100])){
                 $one = " one ";
             }
             return trim($string . $one . $terminology[$n]);
