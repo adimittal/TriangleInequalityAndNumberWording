@@ -59,7 +59,7 @@ function copyLoop($r) {
     foreach($r as $k => $v){
         $x[$k] = $v;
     }
-    foreach($r as $k => $v){
+    foreach($x as $k => $v){
         $s[] = [$k => $v];
     }
     
